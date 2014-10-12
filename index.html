@@ -10,7 +10,7 @@
 		<script>
 		function PostsCtrlAjax($scope, $http)
 		{
-			$http({method: 'POST', url: 'offers.json'}).success(function(data)
+			$http({method: 'GET', url: 'offers.json'}).success(function(data)
 			{
 		$scope.offers = data.offers; // response data
 		$scope.offer_index = 0;
